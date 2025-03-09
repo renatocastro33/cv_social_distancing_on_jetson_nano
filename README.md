@@ -75,15 +75,20 @@ python Calibration_Social_Distancing.py -i <video_path_or_0> -m <jetson_or_compu
    - Width (cm)
    - Height (cm)
    - Minimum social distance (cm)
+     
 ![Calibration_Command](Resources/Calibration_Image_4.jpg)
 
 3. **Select 4 points for Region of Interest (ROI), also clockwise.**
+   
 ![Calibration_Command](Resources/Calibration_Image_5.jpg)
+
 4. Calibration outputs:
    - Homography matrix (`Homolographic_Matrix.npy`)
    - Distance scaling (`min_distance_pix.npy`)
    - ROI and BEV points.
+     
 ![Calibration_Command](Resources/Calibration_Image_6.jpg)
+
 These files are automatically saved in `Numpy Files/` and `Images/`.
 
 ---
