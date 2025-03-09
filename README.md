@@ -60,22 +60,30 @@ Place these files inside the `Models/` directory:
 python Calibration_Social_Distancing.py -i <video_path_or_0> -m <jetson_or_computer>
 ```
 
+![Calibration_Command](Resources/Calibration_Image_2.jpg)
+
 ### Parameters:
 - `-i` or `--input`: Path to video file or `0` for live camera.
 - `-m` or `--machine`: Device type, options: `jetson` or `computer`.
 
 ### Process:
 1. **Select 4 points for Bird's Eye View (clockwise order).**
+
+![Calibration_Command](Resources/Calibration_Image_3.jpg)
+
 2. **Input real-world measurements:**
    - Width (cm)
    - Height (cm)
    - Minimum social distance (cm)
+![Calibration_Command](Resources/Calibration_Image_4.jpg)
+
 3. **Select 4 points for Region of Interest (ROI), also clockwise.**
+![Calibration_Command](Resources/Calibration_Image_5.jpg)
 4. Calibration outputs:
    - Homography matrix (`Homolographic_Matrix.npy`)
    - Distance scaling (`min_distance_pix.npy`)
    - ROI and BEV points.
-
+![Calibration_Command](Resources/Calibration_Image_6.jpg)
 These files are automatically saved in `Numpy Files/` and `Images/`.
 
 ---
@@ -87,7 +95,7 @@ Run the main detection system:
 ```bash
 python Detection_Social_Distancing.py -i <video_path_or_0> -m <jetson_or_computer> -r <True_or_False> -d <True_or_False> -n <numberDropFrames>
 ```
-
+![Calibration_Command](Resources/Social_Distancing_1.jpg)
 ### Parameters:
 - `-i` or `--input`: Path to video file or `0` for live camera.
 - `-m` or `--machine`: Device type, options: `jetson` or `computer`.
