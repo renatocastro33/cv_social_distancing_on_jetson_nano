@@ -164,7 +164,6 @@ python Detection_Social_Distancing.py -i ./Videos/test.mp4 -m computer -r True -
 - **Detection Model**: Easily swap YOLOv3 model files under `Models/`.
 - **Distance Parameters**: Adjusted during calibration.
 - **Frame Skipping**: Fine-tune with `--numberDropFrames` for real-time performance.
-- **API Integration**: Extend with `utils_mdp.py` for incident reporting or alerts.
 
 ---
 
